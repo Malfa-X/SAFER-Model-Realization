@@ -1,5 +1,7 @@
 # SAFER — Software Analysis Framework for Evaluating Risk
 
+> [English](README.md) | [中文](README_ZH.md)
+
 A Python implementation of the **SAFER** risk-scoring model from
 [arXiv:2408.02876v2](https://arxiv.org/abs/2408.02876)
 ("Elevating Software Trust: A Holistic Approach to Open-Source Risk Assessment").
