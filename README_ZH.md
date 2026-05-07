@@ -1,5 +1,7 @@
 # SAFER — 软件风险评估分析框架
 
+> [English](README.md) | [中文](README_ZH.md)
+
 本项目是 **SAFER** 风险评分模型的 Python 实现，论文来源：
 [arXiv:2408.02876v2](https://arxiv.org/abs/2408.02876)
 （《提升软件信任度：开源软件风险评估的整体方法》）。
