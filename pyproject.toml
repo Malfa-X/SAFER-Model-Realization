@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safer-model"
+version = "1.0.0"
+description = "SAFER: Software Analysis Framework for Evaluating Risk (arXiv:2408.02876v2)"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "click>=8.1",
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.27",
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov",
+    "httpx",
+]
+
+[project.scripts]
+safer = "safer_cli.main:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["safer_model*", "safer_cli*", "safer_api*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
